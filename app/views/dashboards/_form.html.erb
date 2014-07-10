@@ -1,0 +1,11 @@
+<%= form_for @greeting do |form| %>
+  <div>
+  <%= form.label :message, "Message"%>
+  <%= form.text_area :message, placeholder: "Speak truth to power" %>
+  <%= form.label :receiver_id, "Pick somebody" %>
+  <%= form.collection_select(:receiver_id, @users, :id, :email) %>
+</div>
+<div>
+  <%= form.submit "Send your greeting" %> 
+</div>
+<% end %>  
