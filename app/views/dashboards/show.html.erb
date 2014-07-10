@@ -1,0 +1,5 @@
+<h3>Hey <%=current_user.email %>! See all your yo's here</h3>
+<%= form_for @greeting do |form| %>
+  <%= form.label :body, as: "Your message"%>
+  <%= form.text_area body:, placeholder: "Say something" %>
+<% end %>  
