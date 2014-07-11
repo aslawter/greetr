@@ -5,7 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 # Use postgresql as the database for Active Record
 gem 'monban-generators'
+#Creates secure login for users
 
+gem 'dotenv-rails', :groups => [:development, :test]
+# loads environment variables from .env into ENV in development.
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
