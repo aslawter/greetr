@@ -2,9 +2,11 @@
 var pusher = new Pusher.key;
 var channel = pusher.subscribe("Andrew-channel");
 
-channel.bind('Andrew-channel', function(data) {
+channel.bind("new_greeting", function(data) {
    alert('An event was triggered with message: ' + data.message);
     });
+
+
 </script>
 
 <h3>Hey <%=current_user.email %>! See all your yo's here</h3>

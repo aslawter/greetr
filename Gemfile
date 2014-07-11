@@ -11,6 +11,9 @@ gem 'dotenv-rails', :groups => [:development, :test]
 # loads environment variables from .env into ENV in development.
 gem 'pg'
 # Use SCSS for stylesheets
+
+gem 'pusher'
+#allows use of Pusher
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

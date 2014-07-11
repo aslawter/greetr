@@ -5,7 +5,7 @@
   <%= form.label :receiver_id, "Pick somebody" %>
   <%= form.collection_select(:receiver_id, @users, :id, :email) %>
 </div>
-<div>
+<div class="yo_submission">
   <%= form.submit "Send your greeting" %> 
 </div>
 <% end %>  
